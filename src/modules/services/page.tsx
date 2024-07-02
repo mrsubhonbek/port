@@ -24,7 +24,7 @@ export function ServicePage() {
         <Col
           span={24}
           className="mt-16">
-          <Typography.Title className="!text-8xl">Услуги</Typography.Title>
+          <Typography.Title className="!text-7xl">Услуги</Typography.Title>
         </Col>
       </Row>
       {services.map((service) => (
