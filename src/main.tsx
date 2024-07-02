@@ -14,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <ConfigProvider
         theme={{
           token: {
+            colorPrimary: '#ff725e',
             fontFamily: 'Montserrat',
           },
         }}>
