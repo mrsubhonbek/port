@@ -7,7 +7,7 @@ import { router } from './modules/route';
 
 function App() {
   return (
-    <Layout className="min-h-svh max-h-svh bg-transparent container px-3 mx-auto">
+    <Layout className="min-h-svh bg-transparent container px-3 mx-auto">
       <HeaderPage />
       <Layout.Content className="my-20">
         <RouterProvider router={router} />

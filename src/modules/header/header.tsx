@@ -25,7 +25,7 @@ export function HeaderPage() {
   }, [dispatch]);
 
   return (
-    <Layout.Header className="backdrop-blur-md bg-transparent fixed top-0 left-0 right-0">
+    <Layout.Header className="backdrop-blur-md bg-transparent fixed top-0 left-0 right-0 z-10">
       <div className="logo w-20 h-full absolute">Logo</div>
       <Menu
         selectedKeys={[currentPath]}
