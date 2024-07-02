@@ -9,7 +9,7 @@ function App() {
   return (
     <Layout className="min-h-svh max-h-svh bg-transparent container px-3 mx-auto">
       <HeaderPage />
-      <Layout.Content className='my-20'>
+      <Layout.Content className="my-20">
         <RouterProvider router={router} />
       </Layout.Content>
       <FooterPage />

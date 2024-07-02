@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 #root {
-  background-image: url("port.svg");
+  background-image: url("./port.svg");
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
