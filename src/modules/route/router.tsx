@@ -1,8 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { MainPage } from '../main';
 import { ErrorPage } from '../error';
-import { ServicePage } from '../services';
+import { FleetMaintenance, TransportationCargo, ServicePage } from '../services';
 import { NewsPage } from '../news';
+import { Contacts } from '../contacts';
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,14 @@ export const router = createBrowserRouter([
   },
   {
     path: '/contacts',
-    element: <div>contacts</div>,
+    element: <Contacts />,
+  },
+  {
+    path: '/fleet-maintenance',
+    element: <FleetMaintenance />,
+  },
+  {
+    path: '/transportation-of-oil-cargo',
+    element: <TransportationCargo />,
   },
 ]);

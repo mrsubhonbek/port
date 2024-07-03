@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'Бункеровка судов',
-    description: 'Бункеровка судов речного и смешанного река-плавания',
-    navigateUrl: '/bunkering-of-ships',
+    title: 'Обслуживание флота',
+    description:
+      'Услуги по комплексному обслуживанию флота – прием и утилизацию отходов согласно категориям MARPOL – нефтеостатков (шлам)',
+    navigateUrl: '/fleet-maintenance',
   },
   {
-    title: 'Капитализация добычи',
+    title: 'Перевозка нефтеналивных грузов',
     description:
-      'Капитализация добычи сырья из речных и смешанных река-плавания',
-    navigateUrl: '/comprehensive-service',
+      'Мы осуществляем доставку нефтепродуктов, в том числе экспортных видов грузов, от крупнейших нефтеперерабатывающих заводов',
+    navigateUrl: '/transportation-of-oil-cargo',
   },
 ];
 
@@ -24,7 +25,7 @@ export function ServicePage() {
         <Col
           span={24}
           className="mt-16">
-          <Typography.Title className="!text-7xl">Услуги</Typography.Title>
+          <Typography.Title className="!text-7xl ">Услуги</Typography.Title>
         </Col>
       </Row>
       {services.map((service) => (
@@ -35,7 +36,7 @@ export function ServicePage() {
             sm={24}>
             <Card
               hoverable
-              className="bg-black/10 backdrop-blur-xl cursor-default w-full"
+              className="bg-white/30 backdrop-blur-3xl cursor-default w-full"
               type="inner"
               title={service.title}
               extra={

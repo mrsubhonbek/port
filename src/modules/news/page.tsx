@@ -34,7 +34,7 @@ export function NewsPage() {
         <Col
           span={24}
           className="mt-16">
-          <Typography.Title className="!text-7xl">Новости</Typography.Title>
+          <Typography.Title className="!text-7xl ">Новости</Typography.Title>
         </Col>
       </Row>
       <List
