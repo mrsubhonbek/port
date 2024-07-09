@@ -8,7 +8,7 @@ const items = [
     href: '/services',
   },
   {
-    title: 'Перевозка нефтеналивных грузов',
+    title: 'Аренда причальной стенки',
     href: '',
   },
 ];
@@ -31,12 +31,8 @@ export function TransportationCargo() {
         items={items}
         itemRender={itemRender}
       />
-      <Typography.Title level={1}>
-        Перевозка нефтеналивных грузов
-      </Typography.Title>
-      <Typography.Title level={3}>
-        В крупных объемах и любой сложности
-      </Typography.Title>
+      <Typography.Title level={1}>Аренда причальной стенки</Typography.Title>
+      <Typography.Title level={3}>Аренда причальной стенки</Typography.Title>
       <Row gutter={[20, 20]}>
         <Col
           sm={24}

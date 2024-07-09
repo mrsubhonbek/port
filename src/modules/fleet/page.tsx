@@ -2,7 +2,7 @@ import { Space, Row, Col, Typography, List } from 'antd';
 
 const data = [{
   hrefImage: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
-  title: 'Title 0',
+  title: 'Нефтеналивной танкер "СБ-405"',
   description:
     'Sub Title 0',
   content:
@@ -10,22 +10,14 @@ const data = [{
 },
 {
   hrefImage: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
-  title: 'Title 1',
-  description:
-    'Sub Title 0',
-  content:
-    'Content News 0',
-},
-{
-  hrefImage: 'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png',
-  title: 'Title 0',
+  title: 'Бункеровщик "Колонок-52"',
   description:
     'Sub Title 0',
   content:
     'Content News 0',
 }];
 
-export function NewsPage() {
+export function FleetPage() {
   return (
     <Space
       direction="vertical"
@@ -34,7 +26,7 @@ export function NewsPage() {
         <Col
           span={24}
           className="mt-16">
-          <Typography.Title className="!text-7xl ">Новости</Typography.Title>
+          <Typography.Title className="!text-7xl ">Флот</Typography.Title>
         </Col>
       </Row>
       <List
@@ -42,11 +34,6 @@ export function NewsPage() {
         size="large"
         split
         className="bg-white/10 backdrop-blur-xl pb-2 pr-2"
-        pagination={{
-          pageSize: 2,
-          align: "end",
-          position: "bottom"
-        }}
         dataSource={data}
         renderItem={(item, index) => (
           <List.Item

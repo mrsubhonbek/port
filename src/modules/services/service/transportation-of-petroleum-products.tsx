@@ -8,7 +8,7 @@ const items = [
     href: '/services',
   },
   {
-    title: 'Бункеровка флота',
+    title: 'Перевозка нефтепродуктов',
     href: '',
   },
 ];
@@ -21,7 +21,7 @@ function itemRender(currentRoute: any) {
   );
 }
 
-export function FleetMaintenance() {
+export function TransportationPetroleumProducts() {
   return (
     <Space
       direction="vertical"
@@ -31,8 +31,8 @@ export function FleetMaintenance() {
         items={items}
         itemRender={itemRender}
       />
-      <Typography.Title level={1}>Бункеровка флота</Typography.Title>
-      <Typography.Title level={3}>Бункеровка флота</Typography.Title>
+      <Typography.Title level={1}>Перевозка нефтепродуктов</Typography.Title>
+      <Typography.Title level={3}>Перевозка нефтепродуктов</Typography.Title>
       <Row gutter={[20, 20]}>
         <Col
           sm={24}

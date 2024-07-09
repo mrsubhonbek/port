@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { MainPage } from '../main';
 import { ErrorPage } from '../error';
-import { FleetMaintenance, TransportationCargo, ServicePage } from '../services';
-import { NewsPage } from '../news';
+import { FleetMaintenance, TransportationCargo, ServicePage, TransportationPetroleumProducts, LoadingUnloadingWorksNsm } from '../services';
+import { FleetPage } from '../fleet';
 import { Contacts } from '../contacts';
 
 export const router = createBrowserRouter([
@@ -16,16 +16,12 @@ export const router = createBrowserRouter([
     element: <ServicePage />,
   },
   {
-    path: '/news',
-    element: <NewsPage />,
-  },
-  {
     path: '/license',
     element: <div>license</div>,
   },
   {
     path: '/fleet',
-    element: <div>fleet</div>,
+    element: <FleetPage />,
   },
   {
     path: '/contacts',
@@ -38,5 +34,13 @@ export const router = createBrowserRouter([
   {
     path: '/transportation-of-oil-cargo',
     element: <TransportationCargo />,
+  },
+  {
+    path: '/transportation-of-petroleum-products',
+    element: <TransportationPetroleumProducts />,
+  },
+  {
+    path: '/loading-and-unloading-works-of-nsm',
+    element: <LoadingUnloadingWorksNsm />,
   },
 ]);

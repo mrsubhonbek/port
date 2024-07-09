@@ -32,7 +32,7 @@ export function Cell({
     <Card
       hoverable
       onClick={() => {
-        navigate(navigateUrl)
+        navigate(navigateUrl);
         dispatch(setPath(navigateUrl));
       }}
       className={cn(
@@ -42,11 +42,12 @@ export function Cell({
       cover={
         urlImage ? (
           <img
+            loading="lazy"
             className={cn(
               'object-cover object-center w-full h-28',
               classNameImage
             )}
-            alt={altImage}
+            alt={altImage || 'preview'}
             src={urlImage}
           />
         ) : null

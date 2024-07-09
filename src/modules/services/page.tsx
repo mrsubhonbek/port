@@ -3,16 +3,28 @@ import { Link } from 'react-router-dom';
 
 const services = [
   {
-    title: 'Обслуживание флота',
+    title: 'Бункеровка флота',
     description:
       'Услуги по комплексному обслуживанию флота – прием и утилизацию отходов согласно категориям MARPOL – нефтеостатков (шлам)',
     navigateUrl: '/fleet-maintenance',
   },
   {
-    title: 'Перевозка нефтеналивных грузов',
+    title: 'Аренда причальной стенки',
     description:
       'Мы осуществляем доставку нефтепродуктов, в том числе экспортных видов грузов, от крупнейших нефтеперерабатывающих заводов',
     navigateUrl: '/transportation-of-oil-cargo',
+  },
+  {
+    title: 'Перевозка нефтепродуктов',
+    description:
+      'Перевозка нефтепродуктов',
+    navigateUrl: '/transportation-of-petroleum-products',
+  },
+  {
+    title: 'Погрузочно-разгрузочные работы НСМ',
+    description:
+      'Погрузочно-разгрузочные работы НСМ',
+    navigateUrl: '/loading-and-unloading-works-of-nsm',
   },
 ];
 

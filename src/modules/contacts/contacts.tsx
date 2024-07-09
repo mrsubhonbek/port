@@ -15,32 +15,34 @@ import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
 const items: DescriptionsProps['items'] = [
   {
     key: '1',
-    label: 'Company Name',
-    children: 'Zhou Maomao',
+    label: 'Название компании:',
+    children: 'Акционерное общество Терминал Кирельское',
     span: 12,
   },
   {
     key: '2',
-    label: 'Telephone',
+    label: 'Телефон',
     children: '1810000000',
     span: 12,
   },
-  {
-    key: '4',
-    label: 'Remark',
-    children: 'empty',
-    span: 12,
-  },
+
   {
     key: '5',
-    label: 'Address',
-    children: 'No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China',
+    label: 'Адрес:',
+    children:
+      ' Республика Татарстан, Камско-Устьинский р-н, пгт Куйбышевский Затон, ул. Набережная 1П',
     span: 12,
   },
   {
     key: '6',
-    label: 'Email',
-    children: 'Email@mail.com',
+    label: 'Почта',
+    children: 'tk550805@gmail.com',
+    span: 12,
+  },
+  {
+    key: '4',
+    label: 'Примечание',
+    children: '-',
     span: 12,
   },
 ];
@@ -62,15 +64,21 @@ export const Contacts: React.FC = () => (
           gap="small">
           <Tooltip title="email">
             <Button
-              shape="circle"
-              icon={<MailOutlined />}
-            />
+              className="gap-0"
+              shape="circle">
+              <a href="mailto:tk550805@gmail.com">
+                <MailOutlined />
+              </a>
+            </Button>
           </Tooltip>
           <Tooltip title="phone">
             <Button
-              shape="circle"
-              icon={<PhoneOutlined />}
-            />
+              className="gap-0"
+              shape="circle">
+              <a href="tel:1810000000">
+                <PhoneOutlined />
+              </a>
+            </Button>
           </Tooltip>
         </Flex>
       </Col>

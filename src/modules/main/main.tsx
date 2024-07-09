@@ -1,33 +1,28 @@
 import { Col, Row, Typography } from 'antd';
 import { Cell } from './_ui/Card';
+import { LogoBig } from './logo-big';
 
 const cards = [
   {
-    title: 'Card title',
+    title: 'Лицензия',
+    description: 'Лицензия',
+    urlImage:
+      'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
+    navigateUrl: '/license',
+  },
+  {
+    title: 'Флот',
     description: 'This is the description',
     urlImage:
       'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
-    navigateUrl: '',
+    navigateUrl: '/fleet',
   },
   {
-    title: 'Card title',
+    title: 'Контакты',
     description: 'This is the description',
     urlImage:
       'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
-    navigateUrl: '',
-  },
-  {
-    title: 'Card title',
-    description: 'This is the description',
-    urlImage:
-      'https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png',
-    navigateUrl: '',
-  },
-  {
-    className: 'bg-neutral-100/10',
-    title: 'Card title',
-    description: 'This is the description',
-    navigateUrl: '',
+    navigateUrl: '/contacts',
   },
 ];
 
@@ -41,7 +36,7 @@ export function MainPage() {
         <Typography.Title
           level={1}
           className="flex items-center justify-center h-full max-h-96 min-h-96">
-          Big Logo
+          <LogoBig />
         </Typography.Title>
       </Col>
       <Row
